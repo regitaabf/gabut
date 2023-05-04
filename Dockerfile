@@ -11,9 +11,9 @@ RUN apt-get update && \
 COPY package.json .
 
 RUN npm i
-
+RUN npm i -g pm2
 COPY . .
 
 EXPOSE 5000
 
-CMD ["node", "index.js"]
+CMD pm2 start client.js
