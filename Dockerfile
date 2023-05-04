@@ -16,4 +16,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD pm2 start client.js
+CMD pm2 start index.js
